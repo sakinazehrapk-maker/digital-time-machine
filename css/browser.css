@@ -79,3 +79,15 @@
     background:#d4d0c8;
     border-top:1px solid gray;
 }
+#dialup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    font-family:Tahoma,sans-serif;
+}

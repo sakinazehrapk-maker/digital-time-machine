@@ -1,0 +1,20 @@
+{
+    "year":1998,
+    "browser":"netscape",
+    "homepage":"geocities",
+    "desktop":"windows98",
+    "wallpaper":"teal",
+    "font":"Courier New",
+    "cursor":"classic",
+    "internetSpeed":"56kbps",
+    "music":"dialup",
+    "resolution":"800x600",
+    "effects":[
+        "crt",
+        "scanlines",
+        "marquee",
+        "visitorCounter",
+        "blink",
+        "starfield"
+    ]
+}

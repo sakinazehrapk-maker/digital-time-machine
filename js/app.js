@@ -28,3 +28,6 @@ window.addEventListener("load",()=>{
 });
 updateClock();
 setInterval(updateClock,1000);
+window.addEventListener("load",()=>{
+    Engine.travel(1998);
+});

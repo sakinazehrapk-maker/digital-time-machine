@@ -22,5 +22,9 @@ function updateClock(){
         minute:"2-digit"
     });
 }
+window.addEventListener("load",()=>{
+    document.getElementById("modem").play().catch(() => {
+    });
+});
 updateClock();
 setInterval(updateClock,1000);

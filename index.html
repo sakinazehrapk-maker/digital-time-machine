@@ -14,23 +14,31 @@
 <body>
     <div id="desktop">
         <div id="desktop-icons">
-            <div class="icon">
-                🖥️
-                <span>My Computer</span>
-            </div>
-            <div class="icon">
-                🌐
-                <span>Internet</span>
-            </div>
-            <div class="icon">
-                📁
-                <span>Documents</span>
-            </div>
-            <div class="icon">
-                🗑️
-                <span>Recycle Bin</span>
-            </div>
-        </div>
+    <div class="icon" data-app="computer">
+        <img src="assets/icons/computer.png" alt="">
+        <span>My Computer</span>
+    </div>
+    <div class="icon" data-app="internet">
+        <img src="assets/icons/internet.png" alt="">
+        <span>Internet</span>
+    </div>
+    <div class="icon" data-app="aol">
+        <img src="assets/icons/mail.png" alt="">
+        <span>AOL Mail</span>
+    </div>
+    <div class="icon" data-app="icq">
+        <img src="assets/icons/icq.png" alt="">
+        <span>ICQ</span>
+    </div>
+    <div class="icon" data-app="winamp">
+        <img src="assets/icons/winamp.png" alt="">
+        <span>Winamp</span>
+    </div>
+    <div class="icon" data-app="recycle">
+        <img src="assets/icons/recycle.png" alt="">
+        <span>Recycle Bin</span>
+    </div>
+</div>
 <div id="browser-window">
     <div id="title-bar">
         <div id="title-left">
@@ -88,11 +96,13 @@
     id="modem"
     src="assets/sounds/dialup.mp3">
 </audio>
-<script src="js/app.js"></script>
 <script src="js/browser.js"></script>
 <script src="js/themeLoader.js"></script>
 <script src="js/effects.js"></script>
 <script src="js/homepage.js"></script>
 <script src="js/timeEngine.js"></script>
+<script src="js/windowManager.js"></script>
+<script src="js/desktop.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

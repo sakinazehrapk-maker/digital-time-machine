@@ -91,3 +91,29 @@
     z-index:99999;
     font-family:Tahoma,sans-serif;
 }
+.popup-window{
+    position:absolute;
+    top:140px;
+    left:220px;
+    width:320px;
+    background:#c0c0c0;
+    border-top:2px solid white;
+    border-left:2px solid white;
+    border-right:2px solid #555;
+    border-bottom:2px solid #555;
+    z-index:1000;
+    box-shadow:4px 4px 12px rgba(0,0,0,.4);
+}
+.popup-title{
+    background:#000080;
+    color:white;
+    padding:6px 10px;
+    font-weight:bold;
+}
+.popup-content{
+    padding:12px;
+    color:black;
+}
+.winamp{
+    width:280px;
+}

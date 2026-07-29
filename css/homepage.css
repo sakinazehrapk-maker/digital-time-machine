@@ -37,8 +37,7 @@ body{
     padding:12px;
     margin-bottom:12px;
 }
-.panel h2,
-.panel h3{
+.panel h2, .panel h3{
     color:#4fe2ff;
 }
 #left-sidebar ul{
@@ -59,7 +58,5 @@ body{
     padding:15px;
 }
 @keyframes blink{
-    50%{
-        opacity:0;
-    }
+    50%{ opacity:0; }
 }

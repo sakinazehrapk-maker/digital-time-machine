@@ -7,143 +7,149 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="loadingScreen" class="hidden">
-    <h1>Travelling Through Time...</h1>
-    <p>Please wait...</p>
-</div>
-<div class="desktop">
-    <div class="browser">
-        <div class="title-bar">
-            <span>Digital Time Machine - 1998 - Netscape</span>
-            <div class="window-buttons">
-                <button>_</button>
-                <button>□</button>
-                <button>×</button>
-            </div>
-        </div>
-        <div class="menu-bar">
-            <span>File</span>
-            <span>Edit</span>
-            <span>View</span>
-            <span>Go</span>
-            <span>Communicator</span>
-            <span>Help</span>
-        </div>
-        <div class="toolbar">
-            <button>Back</button>
-            <button>Forward</button>
-            <button>Reload</button>
-            <button>Home</button>
-            <button>Search</button>
-            <button>Print</button>
-        </div>
-        <div class="address-bar">
-            <label>Location:</label>
-            <input
-            value="http://www.digitaltimemachine.com/1998/"
-            >
-        </div>
-        <div class="page" id="website">
-    <div class="content-grid">
-        <aside class="left-sidebar">
-            <div class="panel">
-                <h3>Dial-Up Connection</h3>
-                <p>Status:
-                    <span class="yellow">Connected</span>
-                </p>
-                <p class="green">
-                    You are connected<br>
-                    at 28.8 kbps!
-                </p>
-            </div>
-            <div class="panel">
-                <h3>-- Main Menu --</h3>
-                <ul>
-                    <li>About This Site</li>
-                    <li>Cool Links</li>
-                    <li>Guestbook</li>
-                    <li>Fun Stuff</li>
-                    <li>Download Zone</li>
-                    <li>Web Rings</li>
-                    <li>Email Me!</li>
-                </ul>
-            </div>
-            <div class="panel">
-                <h3>GeoCities</h3>
-                <p>This page hosted by</p>
-                <h2 class="green">GeoCities</h2>
-            </div>
-        </aside>
-        <main class="main-content">
-          <div class="time-machine">
-    <input
-        type="number"
-        id="yearInput"
-        placeholder="Enter a year..."
-        min="1995"
-        max="2025"
-    >
-    <button id="travelBtn">
-        Travel
-    </button>
-</div>
-            <h1 class="logo">
-                DIGITAL TIME MACHINE
-            </h1>
-            <h2 class="year">
-                1998
-            </h2>
-            <div class="construction blink">
-              🚧 UNDER CONSTRUCTION 🚧
-            </div>
-            <div class="panel center-panel">
-                <h2>Welcome to 1998!</h2>
-            <p>
-                  The year of amazing websites,
-                  pixel graphics,
-                  and endless possibilities!
-                </p>
-                <hr>
-                <h3>What's New</h3>
-                <ul>
-                    <li>Added new fonts!</li>
-                    <li>More under construction pages!</li>
-                    <li>Best viewed in 800x600</li>
-                </ul>
-            </div>
-        </main>
-        <aside class="right-sidebar">
-            <div class="panel counter">
-                <h3>You are visitor number:</h3>
-                <div class="counter-number" id="counter">
-                  00129876
-                </div>
-            </div>
-            <div class="panel">
-                <h3>Cool Graphic</h3>
-                <div class="computer">
-                    💻
-                </div>
-                <p>Made with FrontPage</p>
-            </div>
-            <div class="panel">
-                <h3>Today's Date</h3>
-                <p>May 20, 1998</p>
-                <div id="clock">
-                    0:37 PM
-                </div>
-            </div>
-        </aside>
+    <div id="loadingScreen" class="hidden">
+        <h1>Travelling Through Time...</h1>
+        <p>Please wait...</p>
     </div>
-</div>
-        <div class="status-bar">
-            Done
+    <div class="desktop">
+        <div class="browser">
+            <div class="title-bar">
+                <span id="browserTitle">
+                  Digital Time Machine - 1998 - Netscape Navigator
+                </span>
+                <div class="window-buttons">
+                    <button>_</button>
+                    <button>□</button>
+                    <button>×</button>
+                </div>
+            </div>
+            <div class="menu-bar">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Go</span>
+                <span>Communicator</span>
+                <span>Help</span>
+            </div>
+            <div class="toolbar">
+                <button>Back</button>
+                <button>Forward</button>
+                <button>Reload</button>
+                <button>Home</button>
+                <button>Search</button>
+                <button>Print</button>
+            </div>
+            <div class="address-bar">
+                <label>Location:</label>
+                <input
+                id="addressBar"
+                type="text"
+                readonly
+                value="http://www.digitaltimemachine.com/1998/">
+            </div>
+            <div class="page" id="website">
+                <div class="content-grid">
+                    <aside class="left-sidebar">
+                        <div class="panel">
+                            <h3>Dial-Up Connection</h3>
+                            <p>
+                                Status:
+                                <span class="yellow">Connected</span>
+                            </p>
+                            <p class="green">
+                                You are connected<br>
+                                at 28.8 kbps!
+                            </p>
+                        </div>
+                        <div class="panel">
+                            <h3>-- Main Menu --</h3>
+                            <ul>
+                                <li>About This Site</li>
+                                <li>Cool Links</li>
+                                <li>Guestbook</li>
+                                <li>Fun Stuff</li>
+                                <li>Download Zone</li>
+                                <li>Web Rings</li>
+                                <li>Email Me!</li>
+                            </ul>
+                        </div>
+                        <div class="panel">
+                            <h3>GeoCities</h3>
+                            <p>This page hosted by</p>
+                            <h2 class="green">GeoCities</h2>
+                        </div>
+                    </aside>
+                    <main class="main-content">
+                        <div class="time-machine">
+                            <input
+                                id="yearInput"
+                                type="number"
+                                placeholder="Enter a year..."
+                                min="1995"
+                                max="2025">
+                            <button id="travelBtn">
+                                Travel
+                            </button>
+                        </div>
+                        <div id="pageContent">
+                            <h1 class="logo">
+                                DIGITAL TIME MACHINE
+                            </h1>
+                            <h2 class="year">
+                                1998
+                            </h2>
+                            <div class="construction blink">
+                                🚧 UNDER CONSTRUCTION 🚧
+                            </div>
+                            <div class="panel center-panel">
+                                <h2>Welcome to 1998!</h2>
+                                <p>
+                                    The year of amazing websites,
+                                    pixel graphics,
+                                    and endless possibilities!
+                                </p>
+                                <hr>
+                                <h3>What's New</h3>
+                                <ul>
+                                    <li>Added new fonts!</li>
+                                    <li>More under construction pages!</li>
+                                    <li>Best viewed in 800×600</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </main>
+                    <aside class="right-sidebar">
+                        <div class="panel counter">
+                            <h3>You are visitor number:</h3>
+                            <div class="counter-number" id="counter">
+                                00129876
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <h3>Cool Graphic</h3>
+                            <div class="computer">
+                                💻
+                            </div>
+                            <p>Made with FrontPage</p>
+                        </div>
+                        <div class="panel">
+                            <h3>Today's Date</h3>
+                            <p>May 20, 1998</p>
+                            <div id="clock">
+                                12:00:00 PM
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div class="status-bar" id="statusBar">
+              Done
+            </div>
         </div>
     </div>
-</div>
-<audio id="dialup" autoplay>
-    <source src="assets/sounds/dialup.mp3" type="audio/mpeg">
-</audio>
-<script src="js/index.js"></script>
+    <audio id="dialup" preload="auto">
+        <source src="assets/sounds/dialup.mp3" type="audio/mpeg">
+    </audio>
+    <script src="js/index.js"></script>
 </body>
 </html>

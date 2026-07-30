@@ -255,3 +255,17 @@ z-index:99999;
 .hidden{
 display:none !important;
 }
+#pageContent{
+transition:.4s;
+animation:fadeIn .5s;
+}
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(15px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}

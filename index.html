@@ -39,7 +39,7 @@
             value="http://www.digitaltimemachine.com/1998/"
             >
         </div>
-        <div class="page">
+        <div class="page" id="website"></div>
     <div class="content-grid">
         <aside class="left-sidebar">
             <div class="panel">
@@ -71,14 +71,26 @@
             </div>
         </aside>
         <main class="main-content">
+          <div class="time-machine">
+    <input
+        type="number"
+        id="yearInput"
+        placeholder="Enter a year..."
+        min="1995"
+        max="2025"
+    >
+    <button id="travelBtn">
+        Travel
+    </button>
+</div>
             <h1 class="logo">
                 DIGITAL TIME MACHINE
             </h1>
             <h2 class="year">
                 1998
             </h2>
-            <div class="construction">
-                🚧 UNDER CONSTRUCTION 🚧
+            <div class="construction blink">
+              🚧 UNDER CONSTRUCTION 🚧
             </div>
             <div class="panel center-panel">
                 <h2>Welcome to 1998!</h2>
@@ -99,8 +111,8 @@
         <aside class="right-sidebar">
             <div class="panel counter">
                 <h3>You are visitor number:</h3>
-                <div class="counter-number">
-                    00129876
+                <div class="counter-number" id="counter">
+                  00129876
                 </div>
             </div>
             <div class="panel">
@@ -125,5 +137,9 @@
         </div>
     </div>
 </div>
+<audio id="dialup" autoplay>
+    <source src="assets/sounds/dialup.mp3" type="audio/mpeg">
+</audio>
+<script src="js/index.js"></script>
 </body>
 </html>

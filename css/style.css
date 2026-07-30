@@ -168,3 +168,71 @@ font-size:30px;
 color:#00ff00;
 font-family:monospace;
 }
+.blink{
+    animation:blink .8s infinite;
+}
+@keyframes blink{
+0%,50%{
+opacity:1;
+}
+51%,100%{
+opacity:0;
+}
+}
+.page{
+position:relative;
+overflow:hidden;
+}
+.page::after{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%;
+pointer-events:none;
+background:
+repeating-linear-gradient(
+transparent,
+transparent 2px,
+rgba(255,255,255,.03) 3px,
+rgba(255,255,255,.03) 4px
+);
+}
+*{
+cursor:crosshair;
+}
+.left-sidebar li:hover{
+color:yellow;
+}
+a{
+color:#66aaff;
+}
+a:visited{
+color:#bb66ff;
+}
+a:hover{
+color:yellow;
+}
+.time-machine{
+display:flex;
+justify-content:center;
+gap:12px;
+margin-bottom:30px;
+}
+.time-machine input{
+width:180px;
+padding:10px;
+font-size:18px;
+font-family:Tahoma;
+}
+.time-machine button{
+padding:10px 20px;
+font-size:18px;
+cursor:pointer;
+background:#c0c0c0;
+border-top:2px solid white;
+border-left:2px solid white;
+border-right:2px solid #444;
+border-bottom:2px solid #444;
+}

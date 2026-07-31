@@ -1,44 +1,66 @@
 const pages = {
-1995:`
-<h1 class="logo">WELCOME TO THE WORLD WIDE WEB</h1>
-<h2 class="year">1995</h2>
-<div class="construction blink">
-🌐 NEW WEBSITE 🌐
-</div>
-<div class="panel center-panel">
-<h2>Welcome!</h2>
-<p>
-The Internet is growing every day!
-</p>
-<ul>
-<li>New Search Engines</li>
-<li>Netscape Navigator Released</li>
-<li>Windows 95</li>
-</ul>
-</div>
-`,
 1998:`
-<h1 class="logo">DIGITAL TIME MACHINE</h1>
-<h2 class="year">1998</h2>
+<div class="website website-1998">
+<marquee behavior="alternate">
+🌟 WELCOME TO MY HOMEPAGE 🌟
+★ SIGN MY GUESTBOOK 
+★ BEST VIEWED AT 800x600 ★
+</marquee>
+<h1 class="logo rainbow">
+DIGITAL TIME MACHINE
+</h1>
+<h2 class="year">
+1998
+</h2>
 <div class="construction blink">
 🚧 UNDER CONSTRUCTION 🚧
 </div>
+<div class="retro-divider"></div>
+<div class="visitor-box">
+Visitor Numbe
+<div id="counter">
+00129876
+</div>
+</div>
+<div class="retro-buttons">
+<button>Home</button>
+<button>Guestbook</button>
+<button>Email</button>
+<button>Downloads</button>
+<button>Links</button>
+<button>About Me</button>
+</div>
 <div class="panel center-panel">
-<h2>Welcome to 1998!</h2>
+<h2>
+Welcome Internet Traveler!
+</h2>
 <p>
-Best viewed in
-Internet Explorer 4
+You have discovered my website.
+I made it with FrontPage.
+Please bookmark it!
 </p>
 <hr>
-<p>
-✔ Visitor Counter
-<br>
-✔ Guestbook
-<br>
-✔ Email Me!
-<br>
-✔ Cool GIFs
-</p>
+<div class="badges">
+🌍 GeoCities
+💻 Netscape
+📧 Email Me
+💾 Download
+⭐ Cool Site
+</div>
+</div>
+<div class="pixel-icons">
+💻 📀 📼 📷 💾 📠 📡
+</div>
+<div class="best-viewed">
+Best viewed using
+<b>
+Internet Explorer 4
+</b>
+at
+<b>
+800 × 600
+</b>
+</div>
 </div>
 `,
 2000:`
@@ -327,19 +349,28 @@ function travel() {
     }
 }
 function applyTheme(year){
-    const pageContent = document.getElementById("pageContent");
-    if(pageContent){
-        pageContent.innerHTML = pages[year];
-    }
-    document.getElementById("website").style.background =
-        themes[year].background;
-    document.getElementById("browserTitle").textContent =
-        themes[year].browserTitle;
-    document.getElementById("addressBar").value =
-        themes[year].address;
-    document.getElementById("statusBar").textContent =
-        themes[year].status;
-    updateClock();
+const pageContent=document.getElementById("pageContent");
+pageContent.innerHTML=pages[year];
+document.getElementById("website").style.background=
+themes[year].background;
+document.getElementById("browserTitle").textContent=
+themes[year].browserTitle;
+document.title =
+"Digital Time Machine • " + year;
+document.getElementById("addressBar").value=
+themes[year].address;
+const status=document.getElementById("statusBar");
+status.textContent="";
+let i=0;
+const text=themes[year].status;
+const typing=setInterval(()=>{
+status.textContent+=text[i];
+i++;
+if(i>=text.length){
+clearInterval(typing);
+}
+},40);
+updateClock();
 }
 const yearInput = document.getElementById("yearInput");
 if(yearInput){

@@ -17,7 +17,7 @@ DIGITAL TIME MACHINE
 </div>
 <div class="retro-divider"></div>
 <div class="visitor-box">
-Visitor Numbe
+Visitor Number
 <div id="counter">
 00129876
 </div>
@@ -74,17 +74,28 @@ Internet companies are everywhere!
 </div>
 `,
 2001:`
+<div class="website website-2001">
 <h1 class="logo">YAHOO!</h1>
 <h2 class="year">2001</h2>
+<div class="search-box">
+<input placeholder="Search Yahoo">
+<button>Search</button>
+</div>
 <div class="panel center-panel">
 <h2>Yahoo Directory</h2>
 <ul>
-<li>News</li>
-<li>Sports</li>
-<li>Shopping</li>
-<li>Finance</li>
-<li>Weather</li>
+<li>📰 News</li>
+<li>⚽ Sports</li>
+<li>💰 Finance</li>
+<li>☀ Weather</li>
+<li>🎵 Music</li>
+<li>🛒 Shopping</li>
+<li>📧 Mail</li>
 </ul>
+</div>
+<div class="news-ticker">
+Breaking: Broadband is becoming more common!
+</div>
 </div>
 `,
 2003:`
@@ -102,19 +113,28 @@ Internet companies are everywhere!
 </div>
 `,
 2005:`
+<div class="website website-2005">
 <h1 class="logo">MYSPACE</h1>
 <h2 class="year">2005</h2>
-<div class="panel center-panel">
-<h2>My Profile</h2>
-<p>
-Mood: Happy
-</p>
-<p>
-Now Playing:
-</p>
-<b>
-Green Day
-</b>
+<div class="profile-card">
+<h3>👤 Hackclub's Profile</h3>
+<p>Age: 18</p>
+<p>Mood: 😎 Happy</p>
+<p>Status: Coding...</p>
+</div>
+<div class="panel">
+<h3>🎵 Now Playing</h3>
+<b>Green Day - Boulevard of Broken Dreams</b>
+</div>
+<div class="panel">
+<h3>⭐ Top Friends</h3>
+<div class="friends-grid">
+😀 Ali
+😄 Sara
+🤖 Robot Club
+🎮 Gamer
+</div>
+</div>
 </div>
 `,
 2007:`
@@ -132,16 +152,23 @@ Green Day
 </div>
 `,
 2010:`
-<h1 class="logo">Facebook</h1>
+<div class="website website-2010">
+<h1 class="logo">FACEBOOK</h1>
 <h2 class="year">2010</h2>
-<div class="panel center-panel">
-<h2>News Feed</h2>
-<div class="post">
-John updated his status.
+<div class="facebook-post">
+<b>John</b>
+<p>Just joined Facebook!</p>
+👍 Like • 💬 Comment
 </div>
-<br>
-<div class="post">
-Emily uploaded 14 photos.
+<div class="facebook-post">
+<b>Emily</b>
+<p>Uploaded 14 new photos.</p>
+👍 Like • 💬 Comment
+</div>
+<div class="facebook-post">
+<b>Michael</b>
+<p>Who's online tonight?</p>
+👍 Like • 💬 Comment
 </div>
 </div>
 `,
@@ -158,13 +185,21 @@ Emily uploaded 14 photos.
 </div>
 `,
 2015:`
-<h1 class="logo">Material Design</h1>
+<div class="website website-2015">
+<h1 class="logo">MATERIAL DESIGN</h1>
 <h2 class="year">2015</h2>
-<div class="panel center-panel">
-<h2>Modern Cards</h2>
-<p>
-Flat UI is everywhere.
-</p>
+<div class="material-card">
+📱 Android 6 Marshmallow
+</div>
+<div class="material-card">
+📧 Gmail gets smarter
+</div>
+<div class="material-card">
+☁ Cloud Storage
+</div>
+<div class="material-card">
+Flat Design Everywhere
+</div>
 </div>
 `,
 2018:`
@@ -196,16 +231,30 @@ Flat UI is everywhere.
 </div>
 `,
 2025:`
-<h1 class="logo">Future Web</h1>
+<div class="website website-2025">
+<h1 class="logo">AI INTERNET</h1>
 <h2 class="year">2025</h2>
-<div class="panel center-panel">
-✨ AI Everywhere
-<br>
-🌌 Glassmorphism
-<br>
-🧠 Smart Search
+<div class="ai-chat">
+🤖 AI Assistant
+<input placeholder="Ask me anything...">
+<button>Generate</button>
 </div>
-`
+<div class="ai-grid">
+<div class="ai-card">
+🎨 Image Generation
+</div>
+<div class="ai-card">
+💻 Coding Assistant
+</div>
+<div class="ai-card">
+🎥 AI Video
+</div>
+<div class="ai-card">
+🌍 AI Search
+</div>
+</div>
+</div>
+`,
 };
 const themes = {
 1995:{
